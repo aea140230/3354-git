@@ -7,9 +7,13 @@ public class Main {
             int result = addArguments(args);
             System.out.println(result);
         } catch (Exception e) {
-            System.err.println("Please provide an arbitrary amount of integers to add");
+            System.err.println("Please provide an arbitrary amount of integers to add/subtract");
         }
-    }
+	   catch (IllegalArgumentException){
+		System.err.println("Please provide a set of INTEGERS to add/subtract.");
+    }     catch(NullPointerException){
+		 System.err.println("Please provide a SET of integers to add/subtract.");
+	}
 
     private static int addArguments(String[] args) {
 	   if (args.length == 0)
