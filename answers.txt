@@ -1,0 +1,19 @@
+//Answers.txt file containing answers to Assignment 1
+1.) 7 commits
+
+2.) Tue Jan 24 22:28:11 2017
+
+3.) git log: displays all commit logs
+    git status: displays the working tree status
+
+4.) unstaged files: a file that is in the index but contents of the working
+	tree differ from the contents in the file listed in the index
+
+    untracked file: a file that exists in the working tree of the repository but
+	isn't listed in the index
+5.) git checkout: updates the working tree to bring the project to a specific commit
+
+    git reset: updates the index to bring the project to a specific commit
+
+6.) Git does not allow you to pull those changes unless the pulling does not require
+clobbering the uncommitted changes
